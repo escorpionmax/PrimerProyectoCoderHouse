@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+{% block title %}
+Busqueda
+{% endblock title %}
+    
+{% block contenido %}
+    
+
+<form action="/buscar/", method="GET">
+    <p>apellido: <input type="text", name="apellido"></p>
+    <input type="submit", value="Buscar">
+</form>
+<button><a href="/formulario/">Crear</a></button>
+ 
+{% endblock contenido %}

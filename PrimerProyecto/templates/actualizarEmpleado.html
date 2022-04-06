@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+
+
+{% block title %}
+        actualizar profesor
+{% endblock title %}
+
+{% block info %}
+    <h2 class="masthead-subheading mb-0">
+        Sección Empleados
+    </h2>
+{% endblock info %}
+
+
+{% block contenido %}
+    <p>
+        Formulario Editar Empleado
+    </p>
+    {% if miform.errors %}
+        <p style="color:red">Los datos estan mal</p>
+    {% endif %}
+
+<form action="", method="POST">{% csrf_token %}
+    {{miform.as_table}}  
+    <input type="submit", value="Crear">
+</form>
+    
+{% endblock contenido %}
+    

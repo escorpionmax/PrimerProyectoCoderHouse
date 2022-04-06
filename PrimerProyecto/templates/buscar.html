@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block title %}
+encontrados    
+{% endblock title %}
+
+{% block contenido %}
+    
+<p>Empleados encontrado con el apellido {{apellido}}</p>
+
+{% for i in emp %}
+<p>{{i.nombre}} - {{i.apellido}}</p>
+{% endfor %}
+<button><a href="/busquedanombre/">Buscar</a></button>  
+<button><a href="/formulario/">Crear</a></button>
+{% endblock contenido %}
+ 

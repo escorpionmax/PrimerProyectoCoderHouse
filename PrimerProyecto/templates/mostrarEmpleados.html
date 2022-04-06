@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+
+{% block title %}
+    Todos los profesores
+{% endblock title %}
+
+{% block info %}
+    <h2 class="masthead-subheading mb-0">
+        Sección Empleados
+    </h2>
+{% endblock info %}
+
+{% block contenido %}
+    <p>
+        Empleados cargados en la base de datos
+    </p>
+
+    {% for i in emp %}  
+            <p>
+                {{i.nombre}} - {{i.apellido}} - {{i.dni}}
+                <button><a href=" {% url 'Eliminar' i.id %}">Eliminar</a></button>
+                <button><a href=" {% url 'Actualizar' i.id %}">actualizar</a></button>
+            </p>
+    {% endfor %}
+{% endblock contenido %}
+    
