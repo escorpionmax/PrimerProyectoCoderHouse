@@ -81,7 +81,7 @@ def formmularioi(request):
 def buscar_datosi(request):
     return render(request, "busquedanombrei.html")
 
-def buscari(request):
+def buscari(request): 
 
     if request.GET['entidad']:
         entidad=request.GET['entidad']
