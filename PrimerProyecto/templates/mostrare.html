@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block title %}
+    Todos los impuestos
+{% endblock title %}
+
+{% block info %}
+    <h2 class="masthead-subheading mb-0">
+        Sección Empresas
+    </h2>
+{% endblock info %}
+
+{% block contenido %}
+    <p>
+        Empresas cargadas en la base de datos
+    </p>
+
+    {% for i in empresas %}  
+            <p>
+                {{i}}
+                <button><a href=" {% url 'EliminarE' i.id %}">Eliminar</a></button>
+                <button><a href=" {% url 'ActualizarE' i.id %}">actualizar</a></button>
+            </p>
+    {% endfor %}
+{% endblock contenido %}

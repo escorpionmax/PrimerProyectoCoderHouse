@@ -19,11 +19,11 @@ urlpatterns = [
     path('actualizari/<id>/', views.actualizari, name="ActualizarI"),
     
     path('formularioe/', views.formmularioe, name="FormularioE"),
-    path("busquedae/", views.buscar_datosi, name="BuscarnombreE"),
-    path("buscare/", views.buscari, name="BuscarE"),
-    path('mostrare/',views.mostrar_i, name="MostrarE" ),
-    path('eliminare/<id>/', views.eliminari, name="EliminarE"),
-    path('actualizare/<id>/', views.actualizari, name="ActualizarE"),
+    path("busquedae/", views.buscar_datose, name="BuscarnombreE"),
+    path("buscare/", views.buscare, name="BuscarE"),
+    path('mostrare/',views.mostrar_e, name="MostrarE" ),
+    path('eliminare/<id>/', views.eliminare, name="EliminarE"),
+    path('actualizare/<id>/', views.actualizare, name="ActualizarE"),
 
 
 ]

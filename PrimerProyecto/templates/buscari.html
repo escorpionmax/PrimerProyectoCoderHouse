@@ -3,6 +3,11 @@
 {% block title %}
 encontrados    
 {% endblock title %}
+{% block info %}
+    <h2 class="masthead-subheading mb-0">
+        Sección Impuestos
+    </h2>
+{% endblock info %}
 
 {% block contenido %}
     
@@ -11,7 +16,7 @@ encontrados
     {% for i in inpuestos %}
         <p>{{i}}</p>
     {% endfor %}
-    <button><a href="/busquedanombrei/">Buscar</a></button>  
+    <button><a href="/busquedai/">Buscar</a></button>  
     <button><a href="/formularioi/">Crear</a></button>
 {% endblock contenido %}
  

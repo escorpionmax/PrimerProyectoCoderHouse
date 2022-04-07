@@ -6,7 +6,7 @@
 
 {% block info %}
     <h2 class="masthead-subheading mb-0">
-        Sección Impuestos
+        Sección Empresas
     </h2>
 {% endblock info %}
 
@@ -14,11 +14,11 @@
     {% if miform.errors %}
     <p style="color:red">Los datos estan mal</p>
     {% endif %}
-    <form action="/formularioi/", method="POST">{% csrf_token %}
-        {{miform.as_p}}  
+    <form action="/formularioe/", method="POST">{% csrf_token %}
+        {{miform.as_table}}  
         <input type="submit", value="Crear">
     </form>
     <p></p>
-    <button><a href=" {% url 'BuscarnombreI' %}">buscar</a></button>
-    <button><a href="{% url 'MostrarI' %}">Mostrar todos los Impuestos</a></button>
+    <button><a href=" {% url 'BuscarnombreE' %}">buscar</a></button>
+    <button><a href="{% url 'MostrarE' %}">Mostrar todas las Empresas</a></button>
 {% endblock contenido %}

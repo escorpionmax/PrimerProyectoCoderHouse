@@ -2,26 +2,27 @@
 
 
 {% block title %}
-        Actualizar Impuestos
+        Actualizar Empresa
 {% endblock title %}
 
 {% block info %}
     <h2 class="masthead-subheading mb-0">
-        Sección Impuestos
+        Sección Empresas
     </h2>
 {% endblock info %}
 
 
 {% block contenido %}
     <p>
-        Formulario Editar Impuestos
+        Formulario Editar Empresa
+        Actualizando la empresa del representante {{representante}}
     </p>
     {% if miform.errors %}
         <p style="color:red">Los datos estan mal</p>
     {% endif %}
 
 <form action="", method="POST">{% csrf_token %}
-    {{miform.as_p}}  
+    {{miform.as_table}}  
     <input type="submit", value="Crear">
 </form>
     

@@ -25,3 +25,6 @@ class Empresa(models.Model):
     representante = models.CharField("Representante", max_length=50)
     rubro = models.CharField("Rubro", max_length=50)
     domicilio = models.CharField("Domicilio", max_length=50)
+
+    def __str__(self) -> str:
+        return f"{self.representante} - {self.rubro} - {self.domicilio} "

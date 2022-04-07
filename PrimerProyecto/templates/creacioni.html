@@ -4,10 +4,16 @@
 Encontrados    
 {% endblock title %}
 
+{% block info %}
+    <h2 class="masthead-subheading mb-0">
+        Sección Impustos
+    </h2>
+{% endblock info %}
+
 {% block contenido %}
     
-<p>Se creo el impuesto {{entidad}} {{impuesto}} {{observacion}} {{n_comprobante}} {{fecha}} </p>
-<button><a href="/busquedanombrei/">Buscar</a></button>
+<p>Se creo el impuesto {{impuesto}} </p>
+<button><a href=" {% url 'BuscarnombreI' %}">Buscar</a></button>
 <button><a href="/formularioi/">Crear</a></button>
  
 {% endblock contenido %}

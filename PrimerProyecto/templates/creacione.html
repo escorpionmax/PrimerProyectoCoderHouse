@@ -1,20 +1,19 @@
 {% extends 'index.html' %}
 
 {% block title %}
-encontrados    
+Encontrados    
 {% endblock title %}
 
 {% block info %}
     <h2 class="masthead-subheading mb-0">
-        Sección Empleados
+        Sección Empresas
     </h2>
 {% endblock info %}
 
 {% block contenido %}
     
-<p>Se creo el empleado {{empleado}} </p>
-<button><a href="/busquedanombre/">Buscar</a></button>
-<button><a href="/formulario/">Crear</a></button>
+<p>Se creo la empresa {{empresa}} </p>
+<button><a href= "{% url 'BuscarnombreE' %}">Buscar</a></button>
+<button><a href="/formularioe/">Crear</a></button>
  
 {% endblock contenido %}
- 

@@ -6,18 +6,18 @@ encontrados
 
 {% block info %}
     <h2 class="masthead-subheading mb-0">
-        Sección Empleados
+        Sección Empresas
     </h2>
 {% endblock info %}
 
 {% block contenido %}
     
     
-        <p>Empleados encontrado con el apellido {{apellido}}</p>
-    {% for i in emp %}
+        <p>Empresas encontradas con el Rubro {{rubro}}</p>
+    {% for i in empresas%}
         <p>{{i}}</p>
     {% endfor %}
-    <button><a href="/busquedanombre/">Buscar</a></button>  
-    <button><a href="/formulario/">Crear</a></button>
+    <button><a href="/busquedae/">Buscar</a></button>  
+    <button><a href="/formularioe/">Crear</a></button>
 {% endblock contenido %}
  
