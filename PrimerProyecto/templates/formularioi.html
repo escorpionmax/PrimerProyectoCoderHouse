@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+
+{% block title %}
+    formulario 
+{% endblock title %}
+
+{% block info %}
+    <h2 class="masthead-subheading mb-0">
+        Sección Impuestos
+    </h2>
+{% endblock info %}
+
+{% block contenido %}
+    {% if miform.errors %}
+    <p style="color:red">Los datos estan mal</p>
+    {% endif %}
+    <form action="/formularioi/", method="POST">{% csrf_token %}
+        {{miform.as_p}}  
+        <input type="submit", value="Crear">
+    </form>
+    <p></p>
+    <button><a href=" {% url 'BuscarnombreI' %}">buscar</a></button>
+    <button><a href="{% url 'MostrarI' %}">Mostrar todos los Empleados</a></button>
+{% endblock contenido %}

@@ -1,3 +1,4 @@
+
 from django import forms
 
 class Formulario(forms.Form):
@@ -6,8 +7,14 @@ class Formulario(forms.Form):
     dni = forms.IntegerField()
     fecha = forms.DateField()
 
-
 class FormularioImpuestos(forms.Form):
-    nombre_entidad = forms.CharField()
-    nombre_concepto = forms.CharField()
-    monto = forms.IntegerField()
+    entidad = forms.CharField()
+    impuesto = forms.CharField()
+    observacion = forms.CharField()
+    n_comprobante = forms.IntegerField()
+    fecha = forms.DateField()
+
+class FormularioEmpresa(forms.Form):
+    representante = forms.CharField()
+    rubro = forms.CharField()
+    domicilio = forms.CharField()

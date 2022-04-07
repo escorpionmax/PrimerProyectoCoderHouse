@@ -55,7 +55,7 @@ ROOT_URLCONF = 'PrimerProyecto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["C:/Users/roque/Desktop/primerProyectoCoder/PrimerProyecto/templates/"],
+        'DIRS': ["C:/Users/roque/Desktop/primerProyectoCoder/PrimerProyectoCoderHose/PrimerProyecto/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
