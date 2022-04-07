@@ -1,5 +1,5 @@
 # PrimerProyectoCoderHose
 Primer parte del proyecto
-Primera parte del proyecto el inicio muestra el grupo y los nombres de los integran.
-En la seccion empleados se nos abre un formulario los cuales son para poder cargar nuevos empleados al igual que en la seccion impuestos y empresas,
-tiene botones los cuales permiten buscar un registro de acuero al campo que muesta cada seccion si existe mas de un registro muestra los que coinciden con la busqueda luego otro boton que nos muestra el total de los registros guardados en la base de datos de cada seccion y en esa misma pagina donde mustran todos los registros guardados aparecen tambien otros dos botones los cuales dan la posibilidad de editar o eliminar un registro
+El inicio muestra el grupo y los nombres de los integrantes.
+En la seccion empleados se nos abre un formulario para poder cargar nuevos empleados al igual que en la seccion impuestos y empresas.
+Tiene botones los cuales permiten buscar un registro de acuero al campo que muestra cada sección. Si existe más de un registro, muestra los que coinciden con la búsqueda. Luego otro botón que nos muestra el total de los registros guardados en la base de datos de cada sección y en esa misma página se muestran todos los registros guardados. Se crearon también otros dos botones los cuales dan la posibilidad de editar o eliminar un registro
